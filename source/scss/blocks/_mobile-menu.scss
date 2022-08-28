@@ -1,0 +1,155 @@
+.burger{
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-gap: 3px;
+
+  span {
+    display: flex;
+    // justify-content: flex-end;
+    width: 100%;
+    height: 3px;
+    background: var(--color-a);
+    border-radius: 26px;
+    transition: all .4s;
+  }
+
+  &--active {
+    span {
+      background-color: var(--color-a);
+
+      &:nth-child(1) {
+        width: 100%;
+      }
+
+      &:nth-child(2) {
+        width: 80%;
+      }
+
+      &:nth-child(3) {
+        width: 60%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+
+}
+
+.mobile-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 26px;
+  background: var(--plus-bg);
+  border: 2px solid var(--plus-bg);
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--color-a);
+
+
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+}
+
+
+.mobile-menu {
+  padding: 10px 30px 30px;
+  max-width: fit-content;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  top: var(--header-height);
+  background-color: black;
+  z-index: 50;
+  transition: all .4s ease-in-out;
+
+  transform: translateX(100%);
+
+  &--active {
+    transform: translateX(0);
+    transition-delay: .3s;
+  }
+
+  &__nav {
+    flex-direction: column;
+    grid-gap: 20px;
+    align-items: flex-end;
+    justify-content: initial;
+
+    .navigation-list__link {
+      font-size: 13px;
+      text-align: right;
+    }
+  }
+
+  &__list {
+    grid-gap: 10px 15px;
+    margin-bottom: 35px;
+    position: relative;
+    display: grid;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 230px;
+
+    .nav-list__item:last-child {
+      grid-column: 2;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      right: -30px;
+      height: 1px;
+      background-color: #676767;
+      bottom: -15px;
+    }
+
+    .nav-list__link {
+      grid-gap: 5px;
+      font-size: 12px;
+
+      svg {
+        max-width: 20px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+
+
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  transition: all .4s;
+
+  &.active {
+    visibility: visible;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+}

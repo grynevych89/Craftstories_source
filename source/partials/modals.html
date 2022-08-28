@@ -1,0 +1,340 @@
+<div class="age-modal" data-modal="age">
+  <span class="age-modal__title">
+    Увага
+  </span>
+
+  <span class="age-modal__text">
+    Вам вже виполнилося 18 років?
+  </span>
+
+  <div class="age-modal__buttons">
+    <button class="age-modal__btn red-border age-modal__btn--yes">
+      так
+    </button>
+    <a href="https://zakon.rada.gov.ua/laws/show/1019-20#n42" class="age-modal__btn red-border">
+      нi
+    </a>
+  </div>
+
+</div>
+
+
+<div class="regestration-modal" data-modal="reg">
+
+  <h2 class="modal-title">
+    Реєстрація та вхід
+  </h2>
+
+  <button class="close-modal">
+    <svg width='30' height='30'>
+      <use href='img/sprite/sprite.svg#close'></use>
+    </svg>
+  </button>
+
+  <div class="form-tabs tabs-parent regestration-modal__inner">
+    <div class="form-tabs__nav">
+      <button class="form-tabs__btn active" data-tab="1">
+        я новий клієнт
+      </button>
+      <button class="form-tabs__btn" data-tab="2">
+        я постійний клієнт
+      </button>
+    </div>
+    <ul class="form-tabs__list">
+      <li class="form-tabs__item active" data-tab-content="1">
+        <div class="form-tabs__inner form-tabs__inner--new">
+          <label class="form-tabs__label" for="#">
+            <input type="text" placeholder="Прізвище" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="text" placeholder="Імʼя" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="tel" class="error" placeholder="+38 (   )" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="email" placeholder="Email" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="password" placeholder="Введіть пароль" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="password" placeholder="Повторіть пароль" required>
+          </label>
+
+          <div class="form-tabs__bottom">
+
+            <a href="policy.html" class="policy-link forgot-pass">
+              Політика конфіденційності
+            </a>
+
+
+            <button class="form-tabs__sign">
+              зареєструватись
+            </button>
+            <a href="#" class="form-tabs__link">
+              <svg width="32" height="32">
+                <use href='img/sprite/sprite.svg#form'></use>
+              </svg>
+              Увійти з допомогою
+              Google
+            </a>
+
+            <a href="#" class="form-tabs__link">
+              <svg width="32" height="32">
+                <use href='img/sprite/sprite.svg#form2'></use>
+              </svg>
+              Увійти з допомогою
+              Facebook
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="form-tabs__item" data-tab-content="2">
+        <div class="form-tabs__inner form-tabs__inner--old">
+          <label class="form-tabs__label" for="#">
+            <input type="email" placeholder="Email" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="password" placeholder="Введіть пароль" required>
+          </label>
+
+          <div class="form-tabs__bottom">
+
+            <button class="forgot-pass" data-forgot>
+              Забули свій пароль?
+            </button>
+
+            <button class="form-tabs__sign">
+              Увійти
+            </button>
+
+            <a href="#" class="form-tabs__link">
+              <svg width="32" height="32">
+                <use href='img/sprite/sprite.svg#form'></use>
+              </svg>
+              Увійти з допомогою
+              Google
+            </a>
+
+            <a href="#" class="form-tabs__link">
+              <svg width="32" height="32">
+                <use href='img/sprite/sprite.svg#form2'></use>
+              </svg>
+              Увійти з допомогою
+              Facebook
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="forgot-modal" data-modal="forgot">
+
+  <h2 class="modal-title">
+    Відновлення паролю
+  </h2>
+
+  <button class="close-modal">
+    <svg width='30' height='30'>
+      <use href='img/sprite/sprite.svg#close'></use>
+    </svg>
+  </button>
+  <div class="form-tabs">
+    <ul class="form-tabs__list">
+      <li class="form-tabs__item">
+        <div class="form-tabs__inner form-tabs__inner--old">
+          <label class="form-tabs__label" for="#">
+            <input type="email" placeholder="Email" required>
+          </label>
+
+          <div class="forgot-modal__bottom">
+
+            <button class="forgot-modal__btn red-border" data-back>
+              повернутись
+            </button>
+
+            <button class="forgot-modal__btn red-border">
+              надіслати
+            </button>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="cart-modal" data-modal="cart">
+  <h2 class="modal-title">
+    Кошик з вашими товарами
+  </h2>
+
+  <button class="close-modal">
+    <svg width='30' height='30'>
+      <use href='img/sprite/sprite.svg#close'></use>
+    </svg>
+  </button>
+
+  <ul class="single-history cart-modal__history">
+    <li class="single-history__item cart-modal__item">
+      <div class="single-history__image">
+        <picture>
+          <source type='image/webp' srcset='img/product/history.webp'>
+          <img width='100' height='100' src='img/product/history.png' alt='image'>
+        </picture>
+      </div>
+
+      <div class="single-history__inner">
+        <div class="single-history__top">
+          <span class="single-history__title">
+            Harviestoun “Old Engine Oil”
+
+            <button class="single-history__more red-border">
+              Видалити
+            </button>
+
+          </span>
+          <span class="single-history__info">
+            Пляшки, 0.5 л
+          </span>
+        </div>
+        <div class="single-history__bottom">
+          <form action="#" class="number">
+            <button class="number-minus number__buttons" type="button">
+              <svg width="8" height="2">
+                <use href='img/sprite/sprite.svg#minus'></use>
+              </svg>
+            </button>
+            <label for="#" class="number__label">
+              <input class="number__input" type="number" min="0" value="1" readonly />
+            </label>
+            <button class="number-plus number__buttons" type="button">
+              <svg width="8" height="8">
+                <use href='img/sprite/sprite.svg#plus'></use>
+              </svg>
+            </button>
+          </form>
+          <span class="single-history__price">
+            144
+            <b>₴</b>
+          </span>
+        </div>
+      </div>
+    </li>
+
+    <li class="single-history__item cart-modal__item">
+      <div class="single-history__image">
+        <picture>
+          <source type='image/webp' srcset='img/product/history2.webp'>
+          <img width='100' height='100' src='img/product/history2.png' alt='image'>
+        </picture>
+      </div>
+
+      <div class="single-history__inner">
+        <div class="single-history__top">
+          <span class="single-history__title">
+            Горіхи фісташки солені
+
+            <button class="single-history__more red-border">
+              Видалити
+            </button>
+          </span>
+          <span class="single-history__info">
+            100 г
+          </span>
+        </div>
+        <div class="single-history__bottom">
+          <form action="#" class="number">
+            <button class="number-minus number__buttons" type="button">
+              <svg width="8" height="2">
+                <use href='img/sprite/sprite.svg#minus'></use>
+              </svg>
+            </button>
+            <label for="#" class="number__label">
+              <input class="number__input" type="number" min="0" value="1" readonly />
+            </label>
+            <button class="number-plus number__buttons" type="button">
+              <svg width="8" height="8">
+                <use href='img/sprite/sprite.svg#plus'></use>
+              </svg>
+            </button>
+          </form>
+          <span class="single-history__price">
+            144
+            <b>₴</b>
+          </span>
+        </div>
+      </div>
+    </li>
+
+    <li class="single-history__item cart-modal__item">
+      <div class="single-history__image">
+        <picture>
+          <source type='image/webp' srcset='img/product/history.webp'>
+          <img width='100' height='100' src='img/product/history.png' alt='image'>
+        </picture>
+      </div>
+
+      <div class="single-history__inner">
+        <div class="single-history__top">
+          <span class="single-history__title">
+            Harviestoun “Old Engine Oil”
+            <button class="single-history__more red-border">
+              Видалити
+            </button>
+          </span>
+          <span class="single-history__info">
+            Пляшки, 0.5 л
+          </span>
+        </div>
+        <div class="single-history__bottom">
+          <form action="#" class="number">
+            <button class="number-minus number__buttons" type="button">
+              <svg width="8" height="2">
+                <use href='img/sprite/sprite.svg#minus'></use>
+              </svg>
+            </button>
+            <label for="#" class="number__label">
+              <input class="number__input" type="number" min="0" value="1" readonly />
+            </label>
+            <button class="number-plus number__buttons" type="button">
+              <svg width="8" height="8">
+                <use href='img/sprite/sprite.svg#plus'></use>
+              </svg>
+            </button>
+          </form>
+          <span class="single-history__price">
+            144
+            <b>₴</b>
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <div class="cart-modal__bottom">
+    <button class="cart-modal__cont close-modal">
+      продовжити
+      покупки
+    </button>
+
+    <div class="cart-modal__price">
+      <span class="cart-modal__price-value">
+        594
+        <b>₴</b>
+      </span>
+
+      <a href="order.html" class="cart-modal__order">
+        оформити замовлення
+      </a>
+
+    </div>
+
+
+  </div>
+
+</div>

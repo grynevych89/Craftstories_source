@@ -1,0 +1,26 @@
+.main-top {
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(20px, 2.917vw, 35px);
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(25px, 3.75vw, 45px);
+    line-height: 100%;
+    color: var(--color-a);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 1.667vw, 20px);
+    line-height: 135%;
+    text-align: center;
+    color: var(--color-c);
+  }
+}

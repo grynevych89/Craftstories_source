@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="about.html" class="navigation-list__link navigation-list__link--active"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="sale.html" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="partners.html" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="delivery.html" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="contact.html" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="about.html" class="breadcrumbs__link">О нас</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="main-top about-section__top">
+          <h2 class="main-top__title ">
+            О нас
+          </h2>
+        </div>
+
+        <ul class="about-section__list about-list">
+          <li class="about-list__item">
+            <div class="about-list__image">
+              <picture>
+                <source type='image/webp' srcset='img/about.webp'>
+                <img width='480' height='524' src='img/about.png' alt='image'>
+              </picture>
+            </div>
+
+            <article class="about-list__inner">
+              <span class="about-list__title">
+                Хто ми
+              </span>
+
+              <p class="about-list__text">
+                <b>Вітаємо Вас</b>, ми команда однодумців яка прагне зробити свою працю смачною) але ми із задоволенням поділимся з Вами. Наша мета зібрати в себе найкращі сорти крафтового пива, сидру, вина, найкращі м'ясні вироби, найкращі лимонади, найкращі мякі та тверді сири, також інші цікаві снекові закуски, але виключно українського виробництва, з кожного куточка нашої країни, від людей, які працюють з душею, а також на економічний приріст нашої держави.
+                <br><br>
+                Ми робимо різноманітні смакові сети, пропонуючи нашим гостям гастрономічний  подорож по Україні.
+              </p>
+            </article>
+
+          </li>
+          <li class="about-list__item">
+            <div class="about-list__image about-list__image--dual">
+              <picture>
+                <source type='image/webp' srcset='img/about2.webp'>
+                <img width='479' height='592' src='img/about2.png' alt='image'>
+              </picture>
+
+              <picture>
+                <source type='image/webp' srcset='img/about-mini.webp'>
+                <img width='299' height='365' src='img/about-mini.png' alt='image'>
+              </picture>
+            </div>
+
+            <article class="about-list__inner">
+              <span class="about-list__title">
+                Що у нас є
+              </span>
+
+              <p class="about-list__text">
+                Крафтове пиво — це життя, це постійні експерименти та пошуки кращого смаку.
+                Пиво виготовлене пивоваром вручну, та як наслідок — в невеликих об’ємах. Крафт — це постійний квест та пошук. Здавна все пиво виготовляли вручну. Майже у кожному місті був свій бровар. Кожен з них варив власний сорт пива. Смак відрізнявся, бо рецепти різні, вода різна та й солод, хміль у кожного свої, місцеві. Ми намагаємося зібрати їх для вас, на відстані одного кліку.
+                <br><br>
+                Не меншої уваги ніж пиво, заслуговують і м’ясні делікатеси.
+                мГоловна привабливість сиров’яленого м'яса – це концентрований м’ясний смак, надзвичайний запах і особливо міцна фактура, яка дозволяє нарізати м’ясо дуже тонкими скибками, переводить її із допоміжної категорії «закуска» в розряд «делікатесу», який перетворює її в смаковий центр цілого ряду страв. Щоб отримати гастрономічне задоволення, стати гурманом і естетом. Варто це спробувати.
+              </p>
+            </article>
+
+          </li>
+          <li class="about-list__item">
+            <div class="about-list__image">
+              <picture>
+                <source type='image/webp' srcset='img/about3.webp'>
+                <img width='280' height='383' src='img/about3.png' alt='image'>
+              </picture>
+            </div>
+
+            <article class="about-list__inner">
+              <span class="about-list__title">
+                Чому саме ми
+              </span>
+
+              <p class="about-list__text">
+                Ми втілили все найкраще в одному закладі та здивуємо WOW новинками, які будуть тільки у нас!.. Ми впевнені, що тут будуть об`єднуватися поціновувачі пива і не тільки,адже ми пропонуємо значну кількість сортів на розлив, більше 30 видів. Також ви знайдете улюблені напої у скляних пляшках чи жестяних банках. Щоб ви завжди змогли взяти улюблений напій в будь-яку подорож.
+                <br><br>
+                А для поціновувачів смачних закусок, будемо знаходити шляхи, щоб здивувати українськими м’ясними та сирними делікатесами, які нічим не поступаються славнозвісним італійським чи іспанським.
+                <br><br>
+                У нас ви зможете відпочити від напруженого робочого дня чи тижня. Швидко, за допомогою кількох кліків, а головне якісно та естетично засервірувати стіл різними нарізками, на будь який смак. Ми створимо для вас сети з різними смаколиками та напоями, під вашу компанію та ваші смакові вподобання. А наші служби доставки кулею помчать до вас або ж привезуть на визначений день та час!
+                <br><br>
+                <b>Ласкаво просимо у наш вимір смаку!</b>
+              </p>
+            </article>
+
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

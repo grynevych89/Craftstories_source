@@ -1,0 +1,31 @@
+.section-recomendation {
+  padding: clamp(45px, 6.667vw, 80px) 0;
+  background-color: var(--color-b);
+  position: relative;
+
+  &__top {
+   margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: clamp(25px, 2.917vw, 35px);
+  }
+
+  &__slider {
+    @media screen and (max-width: 320px) {
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 0 10px;
+    }
+
+    @media screen and (min-width: 360px) and (max-width: 576px) {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 0 20px;
+
+      .product-card__item {
+        grid-template-columns: 60px 1fr;
+      }
+    }
+  }
+}

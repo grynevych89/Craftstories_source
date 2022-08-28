@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <title>Craft</title>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Georgia-Italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Georgia-BoldItalic.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+  <div class="container">
+    <div class="header header--mode">
+      <a href="index.html" class="logo header__logo">
+        <svg width="130" height="127">
+          <use href='img/sprite/sprite.svg#logo'></use>
+        </svg>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-list main-nav__list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="tel:380663332211">
+              <span class="nav-list__icon">
+                <svg width="23" height="23">
+                  <use href='img/sprite/sprite.svg#phone'></use>
+                </svg>
+              </span>
+
+              38 (066) 333-22-11
+            </a>
+          </li>
+          <!-- <li class="nav-list__item">
+            <a class="nav-list__link" href="#">
+              <span class="nav-list__icon">
+                <svg width="24" height="24">
+                  <use href='img/sprite/sprite.svg#user'></use>
+                </svg>
+              </span>
+
+              Регістрація
+            </a>
+          </li> -->
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="cabinet.html">
+              <span class="nav-list__icon">
+                <svg width="24" height="24">
+                  <use href='img/sprite/sprite.svg#key'></use>
+                </svg>
+              </span>
+
+              Особистий кабінет
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link nav-list__link--active" href="#" show-cart>
+              <span class="nav-list__icon">
+                <svg width="24" height="20">
+                  <use href='img/sprite/sprite.svg#basket'></use>
+                </svg>
+              </span>
+
+              Кошик
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="burger" data-burger>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <div class="mobile-menu" data-menu>
+
+      <ul class="nav-list mobile-menu__list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#" show-modal>
+            <span class="nav-list__icon">
+              <svg width="24" height="24">
+                <use href='img/sprite/sprite.svg#key'></use>
+              </svg>
+            </span>
+
+            Війти
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link nav-list__link--active" href="#" show-cart>
+            <span class="nav-list__icon">
+              <svg width="24" height="20">
+                <use href='img/sprite/sprite.svg#basket'></use>
+              </svg>
+            </span>
+
+            Кошик
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="navigation-list mobile-menu__nav">
+        <li class="navigation-list__item">
+          <a href="#" class="navigation-list__link">
+            О нас
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="catalog.html" class="navigation-list__link">
+            Каталог
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="sale.html" class="navigation-list__link">
+            Акції
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="partners.html" class="navigation-list__link">
+            Наші партнери
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="delivery.html" class="navigation-list__link">
+            Доставка
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="contacts.html" class="navigation-list__link">
+            Контакти
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link"> Оформлення замовлення</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="error-section">
+        <div class="container">
+          <div class="error-section__box">
+            <div class="error-section__top">
+              <svg width="412" height="146">
+                <use href='img/sprite/sprite.svg#404'></use>
+              </svg>
+
+              <p class="error-section__subtitle">
+                Отакої!
+              </p>
+            </div>
+
+            <div class="error-section__bottom">
+              <p class="error-section__text">
+                Сторінки більше не існує, а може ніколи і не було.
+                Але не треба сумувати, ми пропонуємо повернутись
+                назад чи на головну сторінки та замовити щось смачне.
+              </p>
+
+              <div class="error-section__buttons">
+                <a href="/" class="error-section__link red-border">
+                  назад
+                </a>
+                <a href="index.html" class="error-section__link red-border">
+                  на головну
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer>
+  <div class="container">
+    <div class="footer">
+
+      <ul class="footer__nav">
+        <li class="footer__nav-item">
+          <a href="#">О нас</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Наши партнёры</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Акции</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="footer__wrapper">
+        <a href="#" class="footer__logo">
+          <svg width='130' height='127'>
+            <use href='img/sprite/sprite.svg#footer-logo'></use>
+          </svg>
+        </a>
+
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="10" height="19">
+                <use href='img/sprite/sprite.svg#social'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="19" height="19">
+                <use href='img/sprite/sprite.svg#social2'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="20" height="21">
+                <use href='img/sprite/sprite.svg#social3'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="21" height="17">
+                <use href='img/sprite/sprite.svg#social4'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="24" height="24">
+                <use href='img/sprite/sprite.svg#social5'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__text">
+          © 2022 Всі права захищені.
+          Дизайн та розробка — <a href="https://gd-agency.com.ua/" target="_blank">GD Studio</a>
+        </p>
+
+      </div>
+      <ul class="nav-list footer__nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="tel:380663332211">
+            <span class="nav-list__icon">
+              <svg width="23" height="23">
+                <use href='img/sprite/sprite.svg#phone'></use>
+              </svg>
+            </span>
+            38 (066) 333-22-11
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">
+            <span class="nav-list__icon">
+              <svg width="19" height="24">
+                <use href='img/sprite/sprite.svg#geo'></use>
+              </svg>
+            </span>
+            м. Вишневе <br>
+          вул. Першотравнева 21 Г
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">
+            <span class="nav-list__icon">
+              <svg width="24" height="19">
+                <use href='img/sprite/sprite.svg#mail'></use>
+              </svg>
+            </span>
+            craftstoriesua@gmail.com
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" data-menu-overlay></div>
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

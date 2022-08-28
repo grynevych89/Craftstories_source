@@ -1,0 +1,44 @@
+.sert-section {
+  background-color: var(--plus-bg);
+  padding: clamp(65px, 10.833vw, 130px) 0;
+
+  &__top {
+    margin-bottom: 60px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: Min(39.833vw, 478px) 1fr;
+    grid-gap: clamp(30px, 6.667vw, 80px);
+
+    @media screen and (max-width: 1025px) {
+      grid-gap: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 100%;
+      max-width: 576px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+  }
+
+  &__image {
+    display: flex;
+
+    picture, img {
+      width: 100%;
+    }
+  }
+
+  &__article {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 1.667vw, 20px);
+    line-height: 135%;
+    color: var(--color-a);
+  }
+}

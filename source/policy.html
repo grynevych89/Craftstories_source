@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link"> Оформлення замовлення</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy">
+        <div class="container">
+          <div class="main-top policy__top">
+            <h2 class="main-top__title policy__title">
+              Політика конфіденційності
+            </h2>
+          </div>
+          <div class="policy__box">
+            <article class="policy__article">
+              <span class="policy__article-title">
+                Заголовок 1
+              </span>
+
+              <p class="policy__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa ac nisl, augue feugiat tristique mauris dignissim egestas pretium. Cursus egestas tempus, id eleifend amet. Mollis congue amet luctus vitae malesuada ut eu sed. Auctor a, faucibus habitasse et hac ultrices. Lacus amet id imperdiet volutpat blandit sed. Pellentesque viverra porta turpis a at. Consectetur odio platea quam consectetur commodo facilisi. Lacus, netus orci viverra nullam. Mauris in tincidunt mi turpis nulla pellentesque amet, aenean ultricies. Venenatis a auctor ipsum posuere tortor potenti gravida sit aliquam. Arcu amet turpis ut diam.м
+              </p>
+            </article>
+            <article class="policy__article">
+              <span class="policy__article-title">
+                Заголовок 2
+              </span>
+
+              <p class="policy__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa ac nisl, augue feugiat tristique mauris dignissim egestas pretium. Cursus egestas tempus, id eleifend amet. Mollis congue amet luctus vitae malesuada ut eu sed. Auctor a, faucibus habitasse et hac ultrices. Lacus amet id imperdiet volutpat blandit sed. Pellentesque viverra porta turpis a at. Consectetur odio platea quam consectetur commodo facilisi. Lacus, netus orci viverra nullam. Mauris in tincidunt mi turpis nulla pellentesque amet, aenean ultricies. Venenatis a auctor ipsum posuere tortor potenti gravida sit aliquam. Arcu amet turpis ut diam.м
+              </p>
+            </article>
+
+
+
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

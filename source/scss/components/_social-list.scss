@@ -1,0 +1,48 @@
+.social-list {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+
+  &__link {
+    width: clamp(35px, 3.75vw, 45px);
+    height: clamp(35px, 3.75vw, 45px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-a);
+    border-radius: 3px;
+    transition: all .4s;
+
+    svg {
+      transition: all .4s;
+    }
+  }
+
+  &__link:not(.social-list__link--telega) {
+    svg {
+      fill: var(--plus-bg);
+    }
+  }
+
+  &__link--telega {
+    svg {
+      fill: transparent;
+      stroke: var(--plus-bg);
+    }
+  }
+
+  &__link:hover {
+    background-color: var(--plus-bg);
+    &:not(.social-list__link--telega) {
+      svg {
+        fill: var(--color-a);
+      }
+    }
+    &.social-list__link--telega {
+      svg {
+        fill: transparent;
+        stroke: var(--color-a);
+      }
+    }
+  }
+}

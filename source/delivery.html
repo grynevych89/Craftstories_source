@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="about.html" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="sale.html" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="partners.html" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="delivery.html" class="navigation-list__link navigation-list__link--active"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="contact.html" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="delivery.html" class="breadcrumbs__link">Доставка</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery-section">
+      <div class="container container--mini">
+        <div class="main-top delivery-section__top">
+          <h2 class="main-top__title delivery-section__title">
+            Доставка
+          </h2>
+
+          <p class="main-top__subtitle">
+            У випадках, коли немає можливості самостійно і безпосередньо забрати своє замовлення у нашому магазині, ми пропонуємо доставку завдяки сервісам iPOST та Нова Пошта.
+          </p>
+        </div>
+        <div class="delivery-section__box">
+          <article class="delivery-section__article">
+            <span class="delivery-section__article-title">
+              ipost
+            </span>
+
+            <div class="delivery-section__article-image">
+              <picture>
+                <source type='image/webp' srcset='img/delivery.webp'>
+                <img width='380' height='200' src='img/delivery.png' alt='image'>
+              </picture>
+            </div>
+
+            <p class="delivery-section__article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id massa ornare tortor, a amet dui donec. Sem morbi congue tincidunt libero, nunc, fringilla a ut tempus.
+            </p>
+
+          </article>
+
+          <article class="delivery-section__article">
+            <span class="delivery-section__article-title">
+              НОВА ПОШТА
+            </span>
+
+            <div class="delivery-section__article-image">
+              <picture>
+                <source type='image/webp' srcset='img/delivery2.webp'>
+                <img width='380' height='200' src='img/delivery2.png' alt='image'>
+              </picture>
+            </div>
+
+            <p class="delivery-section__article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id massa ornare tortor, a amet dui donec. Sem morbi congue tincidunt libero, nunc, fringilla a ut tempus. Adipiscing neque mattis gravida aliquet integer. Mauris, nisi facilisi ut risus ut dignissim amet.
+            </p>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

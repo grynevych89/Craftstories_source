@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Особистиій кабінет</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cabinet">
+        <div class="container">
+          <div class="cabinet__box">
+              <div class="cabinet__top">
+                <p class="cabinet__subtitle">
+                  Вітаю, Віктор, це ваш
+                </p>
+                <h2 class="cabinet__title">
+                  Особистий кабінет
+                </h2>
+              </div>
+
+              <div class="form-tabs tabs-parent ">
+                <div class="form-tabs__nav">
+                  <button class="form-tabs__btn active" data-tab="1">
+                    історія замовлень
+                  </button>
+                  <button class="form-tabs__btn" data-tab="2">
+                    контактна інформація
+                  </button>
+                </div>
+                <ul class="form-tabs__list">
+                  <li class="form-tabs__item active" data-tab-content="1">
+
+                    <ul class="order-history accordions">
+
+                      <li class="order-history__item">
+                        <ul class="history-list">
+                          <li class="history-list__item">
+                            <div class="history-list__top" data-id="1">
+                              <span class="history-list__title">
+                                Замовлення № 231
+                              </span>
+                              <span class="history-list__data">
+                                23 липня 2022
+                                <b class="history-list__time">
+                                  15:52
+                                </b>
+                              </span>
+
+                              <div class="history-list__price">
+                                <span class="history-list__price-value">
+                                  624
+                                  <b>
+                                    ₴
+                                  </b>
+                                </span>
+
+                                <div class="history-list__price-progres">
+                                  <span>
+                                    Доставляється
+                                  </span>
+                                </div>
+
+                              </div>
+
+                              <div class="history-list__geo">
+                                <span>
+                                  м. Київ, вул. Костянтинівська 42, 2 підʼїзд, 2531
+                                </span>
+                              </div>
+
+                            </div>
+                            <div class="history-list__inner panel" data-content="1">
+                              <ul class="single-history">
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history.webp'>
+                                      <img width='100' height='100' src='img/product/history.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Harviestoun “Old Engine Oil”
+                                      </span>
+                                      <span class="single-history__info">
+                                        Пляшки, 0.5 л
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history2.webp'>
+                                      <img width='100' height='100' src='img/product/history2.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Горіхи фісташки солені
+                                      </span>
+                                      <span class="single-history__info">
+                                        100 г
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history.webp'>
+                                      <img width='100' height='100' src='img/product/history.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Harviestoun “Old Engine Oil”
+                                      </span>
+                                      <span class="single-history__info">
+                                        Пляшки, 0.5 л
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history2.webp'>
+                                      <img width='100' height='100' src='img/product/history2.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Горіхи фісташки солені
+                                      </span>
+                                      <span class="single-history__info">
+                                        100 г
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+
+                          <li class="history-list__item">
+                            <div class="history-list__top" data-id="2">
+                              <span class="history-list__title">
+                                Замовлення № 215
+                              </span>
+                              <span class="history-list__data">
+                                23 липня 2022
+                                <b class="history-list__time">
+                                  15:52
+                                </b>
+                              </span>
+
+                              <div class="history-list__price">
+                                <span class="history-list__price-value">
+                                  624
+                                  <b>
+                                    ₴
+                                  </b>
+                                </span>
+
+                                <div class="history-list__price-progres history-list__price-progres--done">
+                                  <span>
+                                    Доставлено
+                                  </span>
+                                </div>
+
+                              </div>
+
+                              <div class="history-list__geo">
+                                <span>
+                                  м. Київ, вул. Костянтинівська 42, 2 підʼїзд, 2531
+                                </span>
+                              </div>
+
+                            </div>
+                            <div class="history-list__inner panel" data-content="2">
+                              <ul class="single-history">
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history.webp'>
+                                      <img width='100' height='100' src='img/product/history.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Harviestoun “Old Engine Oil”
+                                      </span>
+                                      <span class="single-history__info">
+                                        Пляшки, 0.5 л
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history2.webp'>
+                                      <img width='100' height='100' src='img/product/history2.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Горіхи фісташки солені
+                                      </span>
+                                      <span class="single-history__info">
+                                        100 г
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history.webp'>
+                                      <img width='100' height='100' src='img/product/history.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Harviestoun “Old Engine Oil”
+                                      </span>
+                                      <span class="single-history__info">
+                                        Пляшки, 0.5 л
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history2.webp'>
+                                      <img width='100' height='100' src='img/product/history2.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Горіхи фісташки солені
+                                      </span>
+                                      <span class="single-history__info">
+                                        100 г
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+
+                          <li class="history-list__item">
+                            <div class="history-list__top" data-id="3">
+                              <span class="history-list__title">
+                                Замовлення № 231
+                              </span>
+                              <span class="history-list__data">
+                                23 липня 2022
+                                <b class="history-list__time">
+                                  15:52
+                                </b>
+                              </span>
+
+                              <div class="history-list__price">
+                                <span class="history-list__price-value">
+                                  624
+                                  <b>
+                                    ₴
+                                  </b>
+                                </span>
+
+                                <div class="history-list__price-progres history-list__price-progres--error">
+                                  <span>
+                                    Відхилено
+                                  </span>
+                                </div>
+
+                              </div>
+
+                              <div class="history-list__geo">
+                                <span>
+                                  м. Київ, вул. Костянтинівська 42, 2 підʼїзд, 2531
+                                </span>
+                              </div>
+
+                            </div>
+                            <div class="history-list__inner panel" data-content="3">
+                              <ul class="single-history">
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history.webp'>
+                                      <img width='100' height='100' src='img/product/history.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Harviestoun “Old Engine Oil”
+                                      </span>
+                                      <span class="single-history__info">
+                                        Пляшки, 0.5 л
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history2.webp'>
+                                      <img width='100' height='100' src='img/product/history2.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Горіхи фісташки солені
+                                      </span>
+                                      <span class="single-history__info">
+                                        100 г
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history.webp'>
+                                      <img width='100' height='100' src='img/product/history.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Harviestoun “Old Engine Oil”
+                                      </span>
+                                      <span class="single-history__info">
+                                        Пляшки, 0.5 л
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="single-history__item">
+                                  <div class="single-history__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/product/history2.webp'>
+                                      <img width='100' height='100' src='img/product/history2.png' alt='image'>
+                                    </picture>
+                                  </div>
+
+                                  <div class="single-history__inner">
+                                    <div class="single-history__top">
+                                      <span class="single-history__title">
+                                        Горіхи фісташки солені
+                                      </span>
+                                      <span class="single-history__info">
+                                        100 г
+                                      </span>
+                                    </div>
+                                    <div class="single-history__bottom">
+                                      <span class="single-history__count">
+                                        2
+                                      </span>
+                                      <span class="single-history__price">
+                                        144
+                                        <b>₴</b>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+
+                    </ul>
+
+                  </li>
+                  <li class="form-tabs__item" data-tab-content="2">
+                    <form action="#" class="form-tabs__inner cabinet__info">
+
+                      <div class="cabinet__info-coll">
+
+                        <span class="cabinet__info-title">
+                          Особисті данні
+                        </span>
+
+                        <ul class="cabinet__list">
+                          <li class="cabinet__list-item">
+                            <label class="form-tabs__label" for="#">
+                              <input type="text" placeholder="Прізвище" required value="Буденко">
+                            </label>
+                          </li>
+                          <li class="cabinet__list-item">
+                            <label class="form-tabs__label" for="#">
+                              <input type="text" placeholder="Імʼя" required value="Віктор">
+                            </label>
+                          </li>
+                          <li class="cabinet__list-item">
+                            <label class="form-tabs__label" for="#">
+                              <input type="tel" placeholder="+38 (   )" required value="+38 (063) 432-32-61">
+                            </label>
+                          </li>
+                          <li class="cabinet__list-item">
+                            <label class="form-tabs__label" for="#">
+                              <input type="email" placeholder="Email" required value="bud_vik@gmail.com">
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="cabinet__info-coll">
+                        <span class="cabinet__info-title">
+                          Змінити пароль
+                        </span>
+                        <ul class="cabinet__list">
+                          <li class="cabinet__list-item">
+                            <label class="form-tabs__label" for="#">
+                              <input type="password" placeholder="Введіть старий пароль" required>
+                            </label>
+                          </li>
+                          <li class="cabinet__list-item">
+                            <label class="form-tabs__label" for="#">
+                              <input type="password" placeholder="Введіть новий пароль" required>
+                            </label>
+                          </li>
+                          <li class="cabinet__list-item">
+                            <label class="form-tabs__label" for="#">
+                              <input type="password" placeholder="Повторіть пароль" required>
+                            </label>
+                          </li>
+                          <li class="cabinet__list-item">
+                            <a href="#" class="forgot-pass" data-forgot>
+                              Забули свій пароль?
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="form-tabs__bottom">
+                        <a href="#" class="red-border">
+                          оновити данні
+                        </a>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="catalog.html" class="breadcrumbs__link"> Каталог </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="product.html" class="breadcrumbs__link">
+                Harviestoun “Old Engine Oil”
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section product-section">
+      <div class="container">
+        <div class="catalog product">
+          <div class="catalog__inner product__inner">
+            <div class="product__box">
+              <div class="single-card single-card--new single-card--disable">
+
+                <div class="single-card__image single-card__image--full">
+                  <span class="single-card__deg"> 11.3 % </span>
+                  <picture>
+                    <source type="image/webp" srcset="img/good_item.webp" />
+                    <img width="82" height="363" src="img/good_item.png.png" alt="product" />
+                  </picture>
+
+                  <span class="single-card__availability">
+                    Немає <br>
+                    в наявності
+                  </span>
+
+                  <span class="single-card__viget">
+                    Нове
+                    <img src="img/sprite/vidget.svg" width="60" height="60" alt="sticker">
+                  </span>
+                </div>
+
+                <div class="single-card__descr">
+
+                  <div class="single-card__descr-top">
+                    <h2 class="single-card__title">
+                      Imperial Stout Heavy
+                    </h2>
+
+                    <div class="single-card__descr-info">
+                      <span class="limited">
+                        Обмежена кількість
+                      </span>
+
+                      <p class="code">
+                        Код товару: <span>3232131245</span>
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+
+
+                  <p class="single-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Et fames faucibus sit et adipiscing sed. Dui, diam mattis
+                    lectus ac id elit placerat ullamcorper. Ultricies
+                    elementum lacinia feugiat phasellus porttitor amet commodo
+                    dis.
+                  </p>
+
+                  <div class="single-card__info">
+                    <div class="single-card__info-coll">
+                      <div class="single-card__info-image">
+                        <picture>
+                          <source type="image/webp" srcset="img/product/info.webp" />
+                          <img width="115" height="115" src="img/product/info.png" alt="image" />
+                        </picture>
+                      </div>
+
+                      <a href="#reviews" class="single-card__info-link anchor-button">
+                        Відгуки (<span>15</span>)
+                      </a>
+                    </div>
+                    <div class="single-card__info-coll">
+                      <ul class="single-card__info-list">
+                        <li class="single-card__info-item">
+                          <span class="single-card__info-title">Країна:</span>
+                          <span class="single-card__info-value">США</span>
+                        </li>
+                        <li class="single-card__info-item">
+                          <span class="single-card__info-title">Вид:</span>
+                          <span class="single-card__info-value">Янтарний ель</span>
+                        </li>
+                        <li class="single-card__info-item">
+                          <span class="single-card__info-title">Колір:</span>
+                          <span class="single-card__info-value">Темне, фільтроване</span>
+                        </li>
+                        <li class="single-card__info-item">
+                          <span class="single-card__info-title">Гіркість:</span>
+                          <span class="single-card__info-value">Солодке</span>
+                        </li>
+                        <li class="single-card__info-item">
+                          <span class="single-card__info-title">Густина:</span>
+                          <span class="single-card__info-value">200</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <ul class="single-card__choice">
+                    <li class="single-card__choice-item">
+                      <span class="single-card__choice-name">
+                        Оберіть тару:
+                      </span>
+
+                      <ul class="single-card__choice-list">
+                        <li>
+                          <div class="checkbox choice-button">
+                            <label class="custom-checkbox choice-button__label">
+                              <input type="radio" name="tare" value="#" checked />
+                              <span>пляшка</span>
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox choice-button">
+                            <label class="custom-checkbox choice-button__label">
+                              <input type="radio" name="tare" value="#" />
+                              <span>банка</span>
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox choice-button">
+                            <label class="custom-checkbox choice-button__label">
+                              <input type="radio" name="tare" value="#" />
+                              <span>розлив</span>
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="single-card__choice-item">
+                      <span class="single-card__choice-name">
+                        Оберіть тару:
+                      </span>
+
+                      <ul class="single-card__choice-list">
+                        <li>
+                          <div class="checkbox choice-button">
+                            <label class="custom-checkbox choice-button__label">
+                              <input type="radio" name="volume" value="#" checked />
+                              <span>0.33</span>
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox choice-button">
+                            <label class="custom-checkbox choice-button__label">
+                              <input type="radio" name="volume" value="#" />
+                              <span>0.5</span>
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox choice-button">
+                            <label class="custom-checkbox choice-button__label">
+                              <input type="radio" name="volume" value="#" />
+                              <span>0.7</span>
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox choice-button">
+                            <label class="custom-checkbox choice-button__label">
+                              <input type="radio" name="volume" value="#" />
+                              <span>1</span>
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <ul class="single-card__price">
+                    <li class="single-card__price-item">
+                      <span class="single-card__price-name">
+                        Ціна, 0.5 л
+                      </span>
+                      <span class="single-card__price-value">
+                        90 <b>₴</b>
+                      </span>
+                    </li>
+                    <li class="single-card__price-item">
+                      <span class="single-card__price-name">
+                        Кіл-ть, шт
+                      </span>
+                      <form action="#" class="number">
+                        <button class="number-minus number__buttons" type="button">
+                          <svg width="8" height="2">
+                            <use href='img/sprite/sprite.svg#minus'></use>
+                          </svg>
+                        </button>
+                        <label for="#" class="number__label">
+                          <input class="number__input" type="number" min="0" value="1" />
+                        </label>
+                        <button class="number-plus number__buttons" type="button">
+                          <svg width="8" height="8">
+                            <use href='img/sprite/sprite.svg#plus'></use>
+                          </svg>
+                        </button>
+                      </form>
+                    </li>
+                    <li class="single-card__price-item">
+                      <button class="single-card__price-add">у кошик</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="single-card__coment">
+                  <form action="#" class="single-card__coment-form">
+                    <fieldset class="single-card__coment-wrapp">
+                      <span class="single-card__coment-legend">Вже брали цей товар</span>
+                      <textarea class="single-card__coment-text" cols="30" rows="10" placeholder="Напишить декілька слів відгука.
+Вам сподобалось?"></textarea>
+
+                <button class="single-card__coment-send">
+                  <svg width='27' height='27'>
+                    <use href='img/sprite/sprite.svg#send'></use>
+                  </svg>
+                </button>
+                    </fieldset>
+
+
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-recomendation">
+      <div class="container">
+        <div class="main-top section-recomendation__top">
+          <h2 class="main-top__title section-recomendation__title">
+            З цим товаром також смачно
+          </h2>
+        </div>
+
+        <div class="section-recomendation__box">
+          <div class="section-recomendation__slider mobile-slider swiper-container">
+            <ul class="product-list swiper-wrapper">
+              <!-- <li class="product-list__item swiper-slide">
+                <div class="product-card product-card--sale">
+                  <a href="#" class="product-card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/product/img3.webp'>
+                      <img width='230' height='260' src='img/product/img3.png' alt='product'>
+                    </picture>
+                  </a>
+                  <span class="product-card__name">
+                    копчене м’ясо шинка
+                  </span>
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <span class="product-card__title">Країна:</span>
+                      <span class="product-card__value">США</span>
+                    </li>
+                    <li class="product-card__item">
+                      <span class="product-card__title">Ен. цінність:</span>
+                      <span class="product-card__value">600 Ккал</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__bottom">
+                    <button class="product-card__add">
+                      у кошик
+                    </button>
+
+                    <form action="#" class="product-card__number">
+                      <label for="#" class="number__label">
+                        <input class="number__input" type="number" min="0" value="1"/>
+                      </label>
+                    </form>
+
+                    <div class="product-card__price">
+                      <span class="product-card__volume">
+                        100 г
+                      </span>
+                      <span class="product-card__price-value">
+                        24 ₴
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+              <li class="product-list__item swiper-slide">
+                <div class="product-card">
+                  <a href="#" class="product-card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/product/img4.webp'>
+                      <img width='230' height='260' src='img/product/img4.png' alt='product'>
+                    </picture>
+                  </a>
+                  <span class="product-card__name">
+                    Горіхи Арахіс солені не чищен.
+                  </span>
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <span class="product-card__title">Країна:</span>
+                      <span class="product-card__value">США</span>
+                    </li>
+                    <li class="product-card__item">
+                      <span class="product-card__title">Ен. цінність:</span>
+                      <span class="product-card__value">600 Ккал</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__bottom">
+                    <button class="product-card__add">
+                      у кошик
+                    </button>
+
+                    <form action="#" class="product-card__number">
+                      <label for="#" class="number__label">
+                        <input class="number__input" type="number" min="0" value="1"/>
+                      </label>
+                    </form>
+
+                    <div class="product-card__price">
+                      <span class="product-card__volume">
+                        100 г
+                      </span>
+                      <span class="product-card__price-value">
+                        24 ₴
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-list__item swiper-slide">
+                <div class="product-card product-card--sale">
+                  <a href="#" class="product-card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/product/img5.webp'>
+                      <img width='230' height='260' src='img/product/img5.png' alt='product'>
+                    </picture>
+                  </a>
+                  <span class="product-card__name">
+                    Голандський сир
+                  </span>
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <span class="product-card__title">Країна:</span>
+                      <span class="product-card__value">США</span>
+                    </li>
+                    <li class="product-card__item">
+                      <span class="product-card__title">Ен. цінність:</span>
+                      <span class="product-card__value">600 Ккал</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__bottom">
+                    <button class="product-card__add">
+                      у кошик
+                    </button>
+
+                    <form action="#" class="product-card__number">
+                      <label for="#" class="number__label">
+                        <input class="number__input" type="number" min="0" value="1"/>
+                      </label>
+                    </form>
+
+                    <div class="product-card__price">
+                      <span class="product-card__volume">
+                        100 г
+                      </span>
+                      <span class="product-card__price-value">
+                        24 ₴
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-list__item swiper-slide">
+                <div class="product-card">
+                  <a href="#" class="product-card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/product/img6.webp'>
+                      <img width='230' height='260' src='img/product/img6.png' alt='product'>
+                    </picture>
+                  </a>
+                  <span class="product-card__name">
+                    Горіхи фісташки
+                    солені
+                  </span>
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <span class="product-card__title">Країна:</span>
+                      <span class="product-card__value">США</span>
+                    </li>
+                    <li class="product-card__item">
+                      <span class="product-card__title">Ен. цінність:</span>
+                      <span class="product-card__value">600 Ккал</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__bottom">
+                    <button class="product-card__add">
+                      у кошик
+                    </button>
+
+                    <form action="#" class="product-card__number">
+                      <label for="#" class="number__label">
+                        <input class="number__input" type="number" min="0" value="1"/>
+                      </label>
+                    </form>
+
+                    <div class="product-card__price">
+                      <span class="product-card__volume">
+                        100 г
+                      </span>
+                      <span class="product-card__price-value">
+                        24 ₴
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section-reviews" id="reviews">
+      <div class="container">
+        <div class="main-top section-reviews__top">
+          <h2 class="main-top__title section-reviews__title">
+            Відгуки про сорт CraftBeer
+          </h2>
+        </div>
+
+
+        <div class="show-reviews">
+          <ul class="reviews-list">
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+            <li class="reviews-list__item">
+              <p class="reviews-list__item-info">
+                <span class="reviews-list__item-data">
+                  22.07.22
+                </span>
+
+                <span class="reviews-list__item-name">
+                  marichka
+                </span>
+              </p>
+              <p class="reviews-list__text">
+                Дуже сподобалось, тепер це мій улюблений смак. Брав також для кума, дуже файно посиділи, душевно))
+              </p>
+            </li>
+          </ul>
+
+          <a href="#" class="show-more">
+            дивитись більше
+          </a>
+        </div>
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

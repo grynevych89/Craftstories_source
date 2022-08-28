@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link"> Оформлення замовлення</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="error-section">
+        <div class="container">
+          <div class="error-section__box">
+            <div class="error-section__top">
+              <svg width="412" height="146">
+                <use href='img/sprite/sprite.svg#404'></use>
+              </svg>
+
+              <p class="error-section__subtitle">
+                Отакої!
+              </p>
+            </div>
+
+            <div class="error-section__bottom">
+              <p class="error-section__text">
+                Сторінки більше не існує, а може ніколи і не було.
+                Але не треба сумувати, ми пропонуємо повернутись
+                назад чи на головну сторінки та замовити щось смачне.
+              </p>
+
+              <div class="error-section__buttons">
+                <a href="/" class="error-section__link red-border">
+                  назад
+                </a>
+                <a href="index.html" class="error-section__link red-border">
+                  на головну
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

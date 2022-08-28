@@ -1,0 +1,132 @@
+header {
+  background-color: var(--color-b);
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes showLogo {
+  0% {
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.has-video .header__logo{
+  opacity: 0;
+  animation: showLogo 2s ease 10s forwards;
+}
+
+
+.header {
+  position: relative;
+  padding: 18px 0;
+
+  &::before {
+    width: 211px;
+    height: 50px;
+    content: '';
+    position: absolute;
+    background-image: var(--header-brow);
+    transform: translateX(-50%);
+    left: 50%;
+    top: 30px;
+    z-index: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: 1025px) {
+      width: 120px;
+      transform: translateX(0%);
+      top: 23px;
+      background-image: var(--mobile-brow);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      left: -20px;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    top: 20px;
+    z-index: 2;
+
+    @media screen and (max-width: 1025px) {
+      max-width: 54px;
+      width: 100%;
+      left: 38px;
+      top: 10px;
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+  }
+
+  &--mode {
+    &::before {
+      left: -20px;
+      width: clamp(211px,26.833vw, 322px);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      transform: none;
+
+      @media screen and (max-width: 1025px) {
+        width: 120px;
+        transform: translateX(0%);
+        top: 23px;
+        background-image: var(--mobile-brow);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: -20px;
+      }
+
+    }
+
+    .header__logo {
+      left: Min(5.833vw, 70px);
+      transform: none;
+      opacity: .7;
+
+      @media screen and (max-width: 1025px) {
+        max-width: 54px;
+        width: 100%;
+        left: 11px;
+        top: 10px;
+      }
+    }
+
+    .nav-list {
+      justify-content: flex-end;
+    }
+
+    .main-nav__list .nav-list__item:first-child {
+      flex-grow: initial;
+    }
+  }
+
+
+  @media screen and (max-width: 1025px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-gap: 15px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 10px 0 14px;
+  }
+
+
+
+}

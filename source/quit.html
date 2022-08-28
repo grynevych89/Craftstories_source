@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link"> Оформлення замовлення</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="quit">
+        <div class="container">
+          <div class="main-top quit__top">
+            <h2 class="main-top__title quit__title">
+              Вихід
+            </h2>
+          </div>
+          <div class="quit__box">
+            <article class="quit__article">
+              <span class="quit__article-title">
+                Ви вийшли з Вашого облікового запису
+              </span>
+
+              <p class="quit__text">
+                Ваш кошик збережений. Зміст кошика буде відновленний <br>
+                 при наступному вході в Ваш обліковий запис.
+              </p>
+            </article>
+
+            <div class="quit__buttons">
+              <a href="index.html" class="quit__button red-border">
+                Головна
+              </a>
+              <a href="index.html" class="quit__button red-border">
+                Каталог
+              </a>
+              <button class="quit__button red-border quit__button--shrink">
+                Вхід в обліковий запис
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

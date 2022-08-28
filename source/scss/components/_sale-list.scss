@@ -1,0 +1,58 @@
+.sale-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-gap: 50px 20px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  @media screen and (max-width: 576px) {
+    // max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(10px, 1.667vw, 20px);
+    align-items: flex-start;
+    cursor: pointer;
+
+    @media screen and (min-width: 360px) and (max-width: 576px) {
+      width: calc(100vw - 40px);
+    }
+
+  }
+
+  &__image {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+
+    picture, img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(16px, 1.667vw, 20px);
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--color-a);
+  }
+
+  &__subtitle {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-c);
+  }
+}

@@ -1,0 +1,9 @@
+.sale-section {
+  background-color: var(--color-d);
+  padding: clamp(40px, 6.667vw, 80px) 0;
+
+  &__top {
+    margin-bottom: clamp(40px, 5.417vw, 65px);
+  }
+
+}

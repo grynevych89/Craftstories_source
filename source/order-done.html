@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link"> Оформлення замовлення</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-done">
+        <div class="container">
+          <div class="order-done__box">
+              <div class="order-done__top">
+                <h2 class="order-done__title">
+                  Оплата пройшла успішно!
+                </h2>
+                <p class="order-done__subtitle">
+                  Дякуємо за замовлення.
+                </p>
+              </div>
+
+              <p class="order-done__text">
+                Ваше замовлення <b>№ 321</b> взято у роботу <br>
+                та незабаром з Вами звʼяжеться наш менеджер, <br>
+                щоб зʼясувати останні деталі та підтвердити данні.
+                <br><br>
+                Ми вислали листа на вашу електрону скриньку
+                з замовленням, але статус завжди можно подивитись
+                у особистому кабінеті.
+              </p>
+
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

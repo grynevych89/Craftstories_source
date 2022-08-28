@@ -1,0 +1,52 @@
+.order-section {
+  padding: clamp(40px, 6.667vw, 80px)
+   0 clamp(40px, 5.833vw, 70px);
+   background-color: var(--color-a);
+   color: var(--color-b);
+   background-image: url(../img/sprite/order-bg.svg);
+   background-repeat: no-repeat;
+   background-position: 48vw center;
+
+   @media screen and (max-width: 1025px) {
+    background-image: none;
+   }
+
+   &__box {
+    display: grid;
+    grid-template-columns: 1fr clamp(300px, 30.333vw, 364px);
+    grid-gap: 0 clamp(50px, 10.833vw, 130px);
+    align-items: flex-start;
+
+    @media screen and (max-width: 1025px) {
+      grid-gap: 0 clamp(20px, 4.878vw, 50px);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 100%;
+      grid-gap: 20px;
+    }
+   }
+
+   &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(30px, 3.75vw, 45px);
+    line-height: 100%;
+    color: var(--color-b);
+    margin-bottom: clamp(35px, 5.333vw, 65px);
+   }
+
+   &__form,
+   &__title {
+    grid-column: 1;
+   }
+
+   &__aside {
+    grid-column: 2;
+
+    @media screen and (max-width: 768px) {
+      grid-column: initial;
+    }
+   }
+}

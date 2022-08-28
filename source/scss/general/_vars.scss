@@ -1,0 +1,44 @@
+:root {
+  --body-bg: #262626;
+
+
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --font-family: "Montserrat", sans-serif; // var(--font-family);
+  --font-family2: "Georgia", sans-serif; // var(--font-family2);
+  --font-family3: "Inter", sans-serif; // var(--font-family3);
+  --font-family4: "Sriracha Cyrillic", sans-serif; // var(--font-family4);
+  // text color
+  --color-a: #ffffff; // var(--color-a);
+  --color-b: #000000; // var(--color-b);
+  --color-c: #999999; // var(--color-c);
+  --color-d: #262626; // var(--color-d);
+  --color-e: #474747; // var(--color-e);
+  --color-f: #4E4E4E; // var(--color-f);
+  --color-g: #515151; // var(--color-g);
+  --color-h: #49BA14; // var(--color-h);
+  --color-i: #0085FF; // var(--color-i);
+  --color-j: #E0E0E0; // var(--color-j);
+  --color-k: #F4F4F4; // var(--color-k);
+  --color-l: #A9A9A9; // var(--color-l);
+  --color-m: #777777; // var(--color-m);
+  --color-n: #F7F7F7; // var(--color-n);
+
+
+  --progress: #C0975A;
+  --progress-done: #49BA14;
+  --progress-error: #A5340F;
+
+
+  --sale:#B69900;
+  --hit: #A5340F;
+  --new: #49BA14;
+
+
+
+  --plus-bg: #A5340F; // var(--plus-bg);
+
+  --advantage-bg: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 50%), #A5340F;
+}

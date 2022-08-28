@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="about.html" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="sale.html" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="partners.html" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="delivery.html" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="contact.html" class="navigation-list__link navigation-list__link--active"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="contact.html" class="breadcrumbs__link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="main-top contact-section__top">
+          <h2 class="main-top__title contact-section__top-title">
+            Контакти
+          </h2>
+        </div>
+        <div class="contact-section__box">
+          <div class="contact-section__inner">
+            <span class="contact-section__title">
+              Ласково просимо до нас!
+            </span>
+            <span class="contact-section__info">
+              Ми розташовані м. Вишневе , вул. Першотравнева 21 Г
+            </span>
+
+            <ul class="nav-list contact-section__nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="tel:380663332211">
+                  <span class="nav-list__icon">
+                    <svg width="23" height="23">
+                      <use href='img/sprite/sprite.svg#phone'></use>
+                    </svg>
+                  </span>
+                  38 (066) 333-22-11
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">
+                  <span class="nav-list__icon">
+                    <svg width="24" height="19">
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                  </span>
+                  craftstoriesua@gmail.com
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="contact-section__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.3438260973871!2d30.509539430091888!3d50.446918371550254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce58664cc227%3A0xeb59da18ad804a4e!2sHand%20Brew%20Coffee!5e0!3m2!1sru!2sro!4v1658042503751!5m2!1sru!2sro" width="975" height="465" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="contact-section__bottom">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <svg width="11" height="20">
+                    <use href='img/sprite/sprite.svg#fb'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <svg width="20" height="20">
+                    <use href='img/sprite/sprite.svg#inst'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <svg width="21" height="21">
+                    <use href='img/sprite/sprite.svg#tiktok'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link social-list__link--telega">
+                  <svg width="22" height="18">
+                    <use href='img/sprite/sprite.svg#telega'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                  <svg width="23" height="25">
+                    <use href='img/sprite/sprite.svg#viber'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <p class="contact-section__text">
+              Ми також є у соціальних мережах.  <br>
+              Підписуйтесь, якщо не хочете пропустити цікаві акції та події!
+            </p>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

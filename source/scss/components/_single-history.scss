@@ -1,0 +1,122 @@
+.single-history {
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(20px, 2.5vw, 30px);
+  padding-left: var(--item-padding);
+
+  &__item {
+    display: grid;
+    grid-gap: clamp(10px, 1.667vw, 20px);
+    grid-template-columns: clamp(80px, 8.333vw, 100px) 1fr;
+  }
+
+  &__image {
+    padding: 10px;
+    width: clamp(80px, 8.333vw, 100px);
+    max-height: 90px;
+    background-color: var(--color-a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-c);
+    border-radius: 4px;
+
+    picture,img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: clamp(80px, 8.333vw, 100px);
+      height: clamp(80px, 8.333vw, 100px);
+      max-height: initial;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__top {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    grid-gap: 0 5px;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(13px, 1.667vw, 20px);
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-c);
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  &__info {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-c);
+    width: fit-content;
+    display: inline;
+    margin-top: -5px;
+
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__count {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-c);
+    border-radius: 4px;
+    background-color: var(--color-a);
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(14px, 1.667vw, 20px);
+    line-height: 100%;
+    color: var(--color-b);
+
+    @media screen and (max-width: 576px) {
+      width: clamp(30px, 4.167vw, 50px);
+      height: clamp(30px, 4.167vw, 50px);
+    }
+  }
+
+  &__price {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(18px, 2.083vw, 25px);
+    line-height: 100%;
+    text-align: center;
+    color: var(--color-b);
+
+    b {
+      font-weight: 500;
+      font-size: clamp(15px, 1.5vw, 18px);
+      line-height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 0;
+  }
+}

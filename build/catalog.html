@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <title>Craft</title>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Georgia-Italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Georgia-BoldItalic.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+  <div class="container">
+    <div class="header header--mode">
+      <a href="index.html" class="logo header__logo">
+        <svg width="130" height="127">
+          <use href='img/sprite/sprite.svg#logo'></use>
+        </svg>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-list main-nav__list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="tel:380663332211">
+              <span class="nav-list__icon">
+                <svg width="23" height="23">
+                  <use href='img/sprite/sprite.svg#phone'></use>
+                </svg>
+              </span>
+
+              38 (066) 333-22-11
+            </a>
+          </li>
+          <!-- <li class="nav-list__item">
+            <a class="nav-list__link" href="#">
+              <span class="nav-list__icon">
+                <svg width="24" height="24">
+                  <use href='img/sprite/sprite.svg#user'></use>
+                </svg>
+              </span>
+
+              Регістрація
+            </a>
+          </li> -->
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="cabinet.html">
+              <span class="nav-list__icon">
+                <svg width="24" height="24">
+                  <use href='img/sprite/sprite.svg#key'></use>
+                </svg>
+              </span>
+
+              Особистий кабінет
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link nav-list__link--active" href="#" show-cart>
+              <span class="nav-list__icon">
+                <svg width="24" height="20">
+                  <use href='img/sprite/sprite.svg#basket'></use>
+                </svg>
+              </span>
+
+              Кошик
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="burger" data-burger>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <div class="mobile-menu" data-menu>
+
+      <ul class="nav-list mobile-menu__list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#" show-modal>
+            <span class="nav-list__icon">
+              <svg width="24" height="24">
+                <use href='img/sprite/sprite.svg#key'></use>
+              </svg>
+            </span>
+
+            Війти
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link nav-list__link--active" href="#" show-cart>
+            <span class="nav-list__icon">
+              <svg width="24" height="20">
+                <use href='img/sprite/sprite.svg#basket'></use>
+              </svg>
+            </span>
+
+            Кошик
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="navigation-list mobile-menu__nav">
+        <li class="navigation-list__item">
+          <a href="#" class="navigation-list__link">
+            О нас
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="catalog.html" class="navigation-list__link">
+            Каталог
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="sale.html" class="navigation-list__link">
+            Акції
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="partners.html" class="navigation-list__link">
+            Наші партнери
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="delivery.html" class="navigation-list__link">
+            Доставка
+          </a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="contacts.html" class="navigation-list__link">
+            Контакти
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div class="age-modal" data-modal="age">
+  <span class="age-modal__title">
+    Увага
+  </span>
+
+  <span class="age-modal__text">
+    Вам вже виполнилося 18 років?
+  </span>
+
+  <div class="age-modal__buttons">
+    <button class="age-modal__btn red-border age-modal__btn--yes">
+      так
+    </button>
+    <a href="https://zakon.rada.gov.ua/laws/show/1019-20#n42" class="age-modal__btn red-border">
+      нi
+    </a>
+  </div>
+
+</div>
+
+<div class="regestration-modal" data-modal="reg">
+
+  <h2 class="modal-title">
+    Реєстрація та вхід
+  </h2>
+
+  <button class="close-modal">
+    <svg width='30' height='30'>
+      <use href='img/sprite/sprite.svg#close'></use>
+    </svg>
+  </button>
+
+  <div class="form-tabs tabs-parent regestration-modal__inner">
+    <div class="form-tabs__nav">
+      <button class="form-tabs__btn active" data-tab="1">
+        я новий клієнт
+      </button>
+      <button class="form-tabs__btn" data-tab="2">
+        я постійний клієнт
+      </button>
+    </div>
+    <ul class="form-tabs__list">
+      <li class="form-tabs__item active" data-tab-content="1">
+        <div class="form-tabs__inner form-tabs__inner--new">
+          <label class="form-tabs__label" for="#">
+            <input type="text" placeholder="Прізвище" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="text" placeholder="Імʼя" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="tel" class="error" placeholder="+38 (   )" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="email" placeholder="Email" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="password" placeholder="Введіть пароль" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="password" placeholder="Повторіть пароль" required>
+          </label>
+
+          <div class="form-tabs__bottom">
+
+            <a href="policy.html" class="policy-link forgot-pass">
+              Політика конфіденційності
+            </a>
+
+            <button class="form-tabs__sign">
+              зареєструватись
+            </button>
+            <a href="#" class="form-tabs__link">
+              <svg width="32" height="32">
+                <use href='img/sprite/sprite.svg#form'></use>
+              </svg>
+              Увійти з допомогою
+              Google
+            </a>
+
+            <a href="#" class="form-tabs__link">
+              <svg width="32" height="32">
+                <use href='img/sprite/sprite.svg#form2'></use>
+              </svg>
+              Увійти з допомогою
+              Facebook
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="form-tabs__item" data-tab-content="2">
+        <div class="form-tabs__inner form-tabs__inner--old">
+          <label class="form-tabs__label" for="#">
+            <input type="email" placeholder="Email" required>
+          </label>
+          <label class="form-tabs__label" for="#">
+            <input type="password" placeholder="Введіть пароль" required>
+          </label>
+
+          <div class="form-tabs__bottom">
+
+            <button class="forgot-pass" data-forgot>
+              Забули свій пароль?
+            </button>
+
+            <button class="form-tabs__sign">
+              Увійти
+            </button>
+
+            <a href="#" class="form-tabs__link">
+              <svg width="32" height="32">
+                <use href='img/sprite/sprite.svg#form'></use>
+              </svg>
+              Увійти з допомогою
+              Google
+            </a>
+
+            <a href="#" class="form-tabs__link">
+              <svg width="32" height="32">
+                <use href='img/sprite/sprite.svg#form2'></use>
+              </svg>
+              Увійти з допомогою
+              Facebook
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="forgot-modal" data-modal="forgot">
+
+  <h2 class="modal-title">
+    Відновлення паролю
+  </h2>
+
+  <button class="close-modal">
+    <svg width='30' height='30'>
+      <use href='img/sprite/sprite.svg#close'></use>
+    </svg>
+  </button>
+  <div class="form-tabs">
+    <ul class="form-tabs__list">
+      <li class="form-tabs__item">
+        <div class="form-tabs__inner form-tabs__inner--old">
+          <label class="form-tabs__label" for="#">
+            <input type="email" placeholder="Email" required>
+          </label>
+
+          <div class="forgot-modal__bottom">
+
+            <button class="forgot-modal__btn red-border" data-back>
+              повернутись
+            </button>
+
+            <button class="forgot-modal__btn red-border">
+              надіслати
+            </button>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="cart-modal" data-modal="cart">
+  <h2 class="modal-title">
+    Кошик з вашими товарами
+  </h2>
+
+  <button class="close-modal">
+    <svg width='30' height='30'>
+      <use href='img/sprite/sprite.svg#close'></use>
+    </svg>
+  </button>
+
+  <ul class="single-history cart-modal__history">
+    <li class="single-history__item cart-modal__item">
+      <div class="single-history__image">
+        <picture>
+          <source type='image/webp' srcset='img/product/history.webp'>
+          <img width='100' height='100' src='img/product/history.png' alt='image'>
+        </picture>
+      </div>
+
+      <div class="single-history__inner">
+        <div class="single-history__top">
+          <span class="single-history__title">
+            Harviestoun «Old Engine Oil»
+
+            <button class="single-history__more red-border">
+              Видалити
+            </button>
+
+          </span>
+          <span class="single-history__info">
+            Пляшки, 0.5 л
+          </span>
+        </div>
+        <div class="single-history__bottom">
+          <form action="#" class="number">
+            <button class="number-minus number__buttons" type="button">
+              <svg width="8" height="2">
+                <use href='img/sprite/sprite.svg#minus'></use>
+              </svg>
+            </button>
+            <label for="#" class="number__label">
+              <input class="number__input" type="number" min="0" value="1" readonly />
+            </label>
+            <button class="number-plus number__buttons" type="button">
+              <svg width="8" height="8">
+                <use href='img/sprite/sprite.svg#plus'></use>
+              </svg>
+            </button>
+          </form>
+          <span class="single-history__price">
+            144
+            <b>₴</b>
+          </span>
+        </div>
+      </div>
+    </li>
+
+    <li class="single-history__item cart-modal__item">
+      <div class="single-history__image">
+        <picture>
+          <source type='image/webp' srcset='img/product/history2.webp'>
+          <img width='100' height='100' src='img/product/history2.png' alt='image'>
+        </picture>
+      </div>
+
+      <div class="single-history__inner">
+        <div class="single-history__top">
+          <span class="single-history__title">
+            Горіхи фісташки солені
+
+            <button class="single-history__more red-border">
+              Видалити
+            </button>
+          </span>
+          <span class="single-history__info">
+            100 г
+          </span>
+        </div>
+        <div class="single-history__bottom">
+          <form action="#" class="number">
+            <button class="number-minus number__buttons" type="button">
+              <svg width="8" height="2">
+                <use href='img/sprite/sprite.svg#minus'></use>
+              </svg>
+            </button>
+            <label for="#" class="number__label">
+              <input class="number__input" type="number" min="0" value="1" readonly />
+            </label>
+            <button class="number-plus number__buttons" type="button">
+              <svg width="8" height="8">
+                <use href='img/sprite/sprite.svg#plus'></use>
+              </svg>
+            </button>
+          </form>
+          <span class="single-history__price">
+            144
+            <b>₴</b>
+          </span>
+        </div>
+      </div>
+    </li>
+
+    <li class="single-history__item cart-modal__item">
+      <div class="single-history__image">
+        <picture>
+          <source type='image/webp' srcset='img/product/history.webp'>
+          <img width='100' height='100' src='img/product/history.png' alt='image'>
+        </picture>
+      </div>
+
+      <div class="single-history__inner">
+        <div class="single-history__top">
+          <span class="single-history__title">
+            Harviestoun «Old Engine Oil»
+            <button class="single-history__more red-border">
+              Видалити
+            </button>
+          </span>
+          <span class="single-history__info">
+            Пляшки, 0.5 л
+          </span>
+        </div>
+        <div class="single-history__bottom">
+          <form action="#" class="number">
+            <button class="number-minus number__buttons" type="button">
+              <svg width="8" height="2">
+                <use href='img/sprite/sprite.svg#minus'></use>
+              </svg>
+            </button>
+            <label for="#" class="number__label">
+              <input class="number__input" type="number" min="0" value="1" readonly />
+            </label>
+            <button class="number-plus number__buttons" type="button">
+              <svg width="8" height="8">
+                <use href='img/sprite/sprite.svg#plus'></use>
+              </svg>
+            </button>
+          </form>
+          <span class="single-history__price">
+            144
+            <b>₴</b>
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <div class="cart-modal__bottom">
+    <button class="cart-modal__cont close-modal">
+      продовжити
+      покупки
+    </button>
+
+    <div class="cart-modal__price">
+      <span class="cart-modal__price-value">
+        594
+        <b>₴</b>
+      </span>
+
+      <a href="order.html" class="cart-modal__order">
+        оформити замовлення
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+    <main>
+      <section class="top-section">
+        <div class="container">
+          <div class="top-section__box">
+            <ul class="navigation-list top-section__nav">
+              <li class="navigation-list__item">
+                <a href="index.html" class="navigation-list__link">
+                  Головна
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="about.html" class="navigation-list__link"> О нас </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="catalog.html" class="navigation-list__link navigation-list__link--active">
+                  Каталог
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="sale.html" class="navigation-list__link"> Акції </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="partners.html" class="navigation-list__link"> Наші партнери </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="delivery.html" class="navigation-list__link"> Доставка </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="contact.html" class="navigation-list__link"> Контакти </a>
+              </li>
+            </ul>
+
+            <ul class="breadcrumbs top-section__breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link"> Головна </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="catalog.html" class="breadcrumbs__link"> Каталог </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+        <section class="catalog-section">
+          <div class="container">
+            <div class="catalog">
+
+              <aside class="catalog-aside">
+                <h2 class="catalog-aside__title">
+                  Обрати товар:
+                </h2>
+
+                <button class="catalog-aside__back">
+                  <svg width="6" height="10" >
+                    <use href='img/sprite/sprite.svg#back'></use>
+                  </svg>
+                  Фильтры:
+                </button>
+
+                <form action="#" class="catalog-aside__search search-form">
+                  <input class="search-form__input" type="text" name="search" placeholder="Пошук">
+                  <button type="submit" class="search-form__button">
+                    <svg width="19" height="19">
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg>
+                  </button>
+
+                  <span class="search-form__clear clear">
+                    очистити
+                  </span>
+
+                </form>
+
+                <ul class="catalog-accordion accordions">
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="1">
+                      <span class="catalog-accordion__button-name">Продукція</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+
+                      <span class="catalog-accordion__button-value">Пиво</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="1">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+
+                          <ul class="checkbox-sublist panel">
+                            <li class="checkbox-sublist__item">
+                              <div class="checkbox">
+                                <label class="custom-checkbox">
+                                  <input type="checkbox" name="#" value="#">
+                                  <span>Алкогольне</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="checkbox-sublist__item">
+                              <div class="checkbox">
+                                <label class="custom-checkbox">
+                                  <input type="checkbox" name="#" value="#">
+                                  <span>Безалкогольне</span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+
+                          <ul class="checkbox-sublist panel">
+                            <li class="checkbox-sublist__item">
+                              <div class="checkbox">
+                                <label class="custom-checkbox">
+                                  <input type="checkbox" name="#" value="#">
+                                  <span>Алкогольне</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="checkbox-sublist__item">
+                              <div class="checkbox">
+                                <label class="custom-checkbox">
+                                  <input type="checkbox" name="#" value="#">
+                                  <span>Безалкогольне</span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="2">
+
+                      <span class="catalog-accordion__button-name">країна виробник</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Укрaїна, Франція</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="2">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="3">
+
+                      <span class="catalog-accordion__button-name">вид</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="3">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="4">
+
+                      <span class="catalog-accordion__button-name"> міцність</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="4">
+                      <li class="catalog-accordion__range">
+                        <div class="range-values">
+                          <input class="range-values__lower" type="number">
+                          <input class="range-values__upper" type="number">
+                        </div>
+                        <div class="range-slider"></div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="5">
+
+                      <span class="catalog-accordion__button-name">гіркість</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="5">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="6">
+
+                      <span class="catalog-accordion__button-name">Колір:</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="6">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="7">
+
+                      <span class="catalog-accordion__button-name">тара</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="7">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul>
+
+              </aside>
+
+              <div class="catalog__inner">
+                <h2 class="catalog-section__title">
+                  Каталог
+                </h2>
+
+                <div class="catalog-filters catalog-section__filters">
+                  <button class="mobile-filters">
+                    Фильтры
+                  </button>
+
+                  <div class="catalog-filters__select">
+
+                      <div class='select'>
+                        <div class='select__header'>
+                          <span class='select__current'>Все</span>
+                          <div class='select__icon'>
+                            <svg width="14" height="8">
+                              <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class='select__body'>
+                          <ul class='select__wrapp'>
+                            <li class='select__item' data-choice='choosen'>назві</li>
+                            <li class='select__item' data-choice='choosen'>ціні</li>
+                            <li class='select__item' data-choice='choosen'>Рейтингу</li>
+                            <li class='select__item' data-choice='choosen'>популярності</li>
+                            <li class='select__item' data-choice='choosen'>об’єму</li>
+                            <li class='select__item' data-choice='choosen'>країні</li>
+                            <li class='select__item' data-choice='choosen'>тарі</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                  </div>
+
+                  <span class="catalog-filters__name">
+                    Сортувати по:
+                  </span>
+
+                  <ul class="catalog-filters__list">
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        назві
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        ціні
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        Рейтингу
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        популярності
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        об’єму
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        країні
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        тарі
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <p class="catalog-filters__result">
+                    Знайдено:
+                    <span class="catalog-filters__value">
+                      9 товарів
+                    </span>
+                  </p>
+
+                </div>
+
+                <ul class="product-list product-list--catalog" >
+                  <li class="product-list__item">
+                    <div class="product-card product-card--sale">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11,3%
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img.webp'>
+                          <img width='230' height='260' src='img/product/img.png' alt='product'>
+                        </picture>
+
+                        <span class="limited product-card__limited">
+                          Обмежена кількість
+                        </span>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun «Old Engine Oil»
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11,3%
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img2.webp'>
+                          <img width='230' height='260' src='img/product/img2.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun «Old Engine Oil»
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11,3%
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img.webp'>
+                          <img width='230' height='260' src='img/product/img.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun «Old Engine Oil»
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11,3%
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img2.webp'>
+                          <img width='230' height='260' src='img/product/img2.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun «Old Engine Oil»
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11,3%
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img.webp'>
+                          <img width='230' height='260' src='img/product/img.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun «Old Engine Oil»
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11,3%
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img2.webp'>
+                          <img width='230' height='260' src='img/product/img2.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun «Old Engine Oil»
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <button class="load-more show-more">Показати ще</button>
+
+                <p class="catalog__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla potenti iaculis in mauris placerat et ipsum neque, mauris. Elementum faucibus lectus odio sit non. In malesuada nibh sed donec nunc sapien id tortor auctor. At diam sed habitasse elit eget lectus. Donec maecenas sit habitasse nulla vitae, quisque non duis sapien. Vulputate enim donec ut vitae eget adipiscing lectus. <br>
+                  Eu in eget diam pellentesque cras eget. Pulvinar integer nulla diam neque tristique ultrices aliquam. Amet, non volutpat mauris, eu. Libero magna id cras dignissim lorem. In malesuada quis donec quis viverra. Imperdiet elit ipsum tincidunt ultrices sed facilisis euismod phasellus. Velit in sed ac viverra dolor sed volutpat. Nullam mattis feugiat ante in habitasse interdum nisl. Purus sit fames nulla turpis consectetur quam tempor. Curabitur aliquet elementum ullamcorper lacus, cursus pulvinar scelerisque in vitae. Blandit nec, nibh fusce dolor ac eget morbi nunc facilisi.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="footer">
+
+      <ul class="footer__nav">
+        <li class="footer__nav-item">
+          <a href="#">О нас</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Наши партнёры</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Акции</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="footer__wrapper">
+        <a href="#" class="footer__logo">
+          <svg width='130' height='127'>
+            <use href='img/sprite/sprite.svg#footer-logo'></use>
+          </svg>
+        </a>
+
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="10" height="19">
+                <use href='img/sprite/sprite.svg#social'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="19" height="19">
+                <use href='img/sprite/sprite.svg#social2'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="20" height="21">
+                <use href='img/sprite/sprite.svg#social3'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="21" height="17">
+                <use href='img/sprite/sprite.svg#social4'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="24" height="24">
+                <use href='img/sprite/sprite.svg#social5'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__text">
+          © 2022 Всі права захищені.
+          Дизайн та розробка — <a href="https://gd-agency.com.ua/" target="_blank">GD Studio</a>
+        </p>
+
+      </div>
+      <ul class="nav-list footer__nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="tel:380663332211">
+            <span class="nav-list__icon">
+              <svg width="23" height="23">
+                <use href='img/sprite/sprite.svg#phone'></use>
+              </svg>
+            </span>
+            38 (066) 333-22-11
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">
+            <span class="nav-list__icon">
+              <svg width="19" height="24">
+                <use href='img/sprite/sprite.svg#geo'></use>
+              </svg>
+            </span>
+            м. Вишневе <br>
+          вул. Першотравнева 21 Г
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">
+            <span class="nav-list__icon">
+              <svg width="24" height="19">
+                <use href='img/sprite/sprite.svg#mail'></use>
+              </svg>
+            </span>
+            craftstoriesua@gmail.com
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" data-menu-overlay></div>
+
+    <button class="lift" id="upbutton">
+      <svg width='13' height='8'>
+        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+      </svg>
+    </button>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

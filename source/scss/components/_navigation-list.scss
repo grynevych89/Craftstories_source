@@ -1,0 +1,26 @@
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: clamp(10px, 0.833vw, 10px) clamp(15px, 3.550vw, 45px);
+  // flex-wrap: wrap;
+
+  &__link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(12px, 1.25vw, 15px);
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--color-c);
+    transition: all .4s;
+
+    &:hover {
+      color: var(--color-a);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

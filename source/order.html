@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-mode.html')
+  @include('partials/modals.html')
+  <main>
+
+    <section class="top-section">
+      <div class="container">
+        <div class="top-section__box">
+          <ul class="navigation-list top-section__nav">
+            <li class="navigation-list__item">
+              <a href="index.html" class="navigation-list__link">
+                Головна
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="about.html" class="navigation-list__link"> О нас </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="catalog.html" class="navigation-list__link">
+                Каталог
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="sale.html" class="navigation-list__link"> Акції </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="partners.html" class="navigation-list__link"> Наші партнери </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="delivery.html" class="navigation-list__link"> Доставка </a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="contact.html" class="navigation-list__link"> Контакти </a>
+            </li>
+          </ul>
+
+          <ul class="breadcrumbs top-section__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link"> Головна </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link"> Оформлення замовлення</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-section">
+        <div class="container">
+          <div class="order-section__box">
+              <h2 class="order-section__title">
+                Оформлення замовлення
+              </h2>
+
+              <form action="#" class="order-section__form order-form">
+                <ul class="order-form__list">
+                  <li class="order-form__item">
+                    <span class="order-form__title">
+                      Ввести контактні данні
+                    </span>
+
+                    <span class="order-form__name">Вітаю, Viktor.</span>
+
+                    <div class="form-tabs tabs-parent">
+                      <div class="form-tabs__nav">
+                        <button class="form-tabs__btn active" data-tab="1">
+                          я новий клієнт
+                        </button>
+                        <button class="form-tabs__btn" data-tab="2">
+                          я постійний клієнт
+                        </button>
+                      </div>
+                      <ul class="form-tabs__list">
+                        <li class="form-tabs__item active" data-tab-content="1">
+                          <div class="form-tabs__inner form-tabs__inner--new">
+                            <label class="form-tabs__label" for="#">
+                              <input type="text" placeholder="Прізвище" required>
+                            </label>
+                            <label class="form-tabs__label" for="#">
+                              <input type="text" placeholder="Імʼя" required>
+                            </label>
+                            <label class="form-tabs__label" for="#">
+                              <input type="tel" class="error" placeholder="+38 (   )" required>
+                            </label>
+                            <label class="form-tabs__label" for="#">
+                              <input type="email" placeholder="Email" required>
+                            </label>
+                            <label class="form-tabs__label" for="#">
+                              <input type="password" placeholder="Введіть пароль" required>
+                            </label>
+                            <label class="form-tabs__label" for="#">
+                              <input type="password" placeholder="Повторіть пароль" required>
+                            </label>
+
+                            <a href="policy.html" class="policy-link forgot-pass">
+                              Політика конфіденційності
+                            </a>
+
+                            <div class="form-tabs__bottom">
+                              <a href="#" class="form-tabs__link">
+                                <svg width="32" height="32">
+                                  <use href='img/sprite/sprite.svg#form'></use>
+                                </svg>
+                                Увійти з допомогою
+                                Google
+                              </a>
+
+                              <a href="#" class="form-tabs__link">
+                                <svg width="32" height="32">
+                                  <use href='img/sprite/sprite.svg#form2'></use>
+                                </svg>
+                                Увійти з допомогою
+                                Facebook
+                              </a>
+                            </div>
+
+                          </div>
+
+
+
+                        </li>
+                        <li class="form-tabs__item" data-tab-content="2">
+                          <div class="form-tabs__inner form-tabs__inner--old">
+                            <label class="form-tabs__label" for="#">
+                              <input type="email" placeholder="Email" required>
+                            </label>
+                            <label class="form-tabs__label" for="#">
+                              <input type="password" placeholder="Введіть пароль" required>
+                            </label>
+
+                            <div class="form-tabs__bottom">
+
+                              <a href="cabinet.html" class="form-tabs__sign">
+                                Увійти
+                              </a>
+
+                              <a href="#" class="form-tabs__link">
+                                <svg width="32" height="32">
+                                  <use href='img/sprite/sprite.svg#form'></use>
+                                </svg>
+                                Увійти з допомогою
+                                Google
+                              </a>
+
+                              <a href="#" class="form-tabs__link">
+                                <svg width="32" height="32">
+                                  <use href='img/sprite/sprite.svg#form2'></use>
+                                </svg>
+                                Увійти з допомогою
+                                Facebook
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="order-form__item tabs-parent ">
+                    <span class="order-form__title">
+                      Доставка
+                    </span>
+                    <ul class="order-form__radio">
+                      <li class="order-form__radio-item">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="delivery" value="#" checked>
+                            <span>Самовивіз</span>
+                          </label>
+                        </div>
+                      </li>
+
+                      <li class="order-form__radio-item">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="delivery" value="#">
+                            <span>Доставка кур’єром</span>
+                          </label>
+                        </div>
+                        <span class="order-form__price">
+                          50
+                          <b>₴</b>
+                        </span>
+                      </li>
+
+                      <li class="order-form__radio-item">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="delivery" value="#">
+                            <span>Самовивіз з НП</span>
+                          </label>
+                        </div>
+                        <span class="order-form__price">
+                          30
+                          <b>₴</b>
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="order-form__item tabs-parent ">
+                    <span class="order-form__title">
+                      Сплата
+                    </span>
+                    <ul class="order-form__radio">
+                      <li class="order-form__radio-item">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="pay" value="#">
+                            <span>Apple Pay</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="order-form__radio-item">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="pay" value="#">
+                            <span>Google Pay</span>
+                          </label>
+                        </div>
+                      </li>
+
+                      <li class="order-form__radio-item">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="pay" value="#" checked>
+                            <span>На банківський рахунок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="order-form__item tabs-parent ">
+                    <span class="order-form__title">
+                      Контактні дані одержувача
+                    </span>
+                    <div class="form-tabs">
+                      <ul class="form-tabs__list">
+                        <li class="form-tabs__item">
+                          <div class="form-tabs__inner form-tabs__inner--new">
+                            <label class="form-tabs__label" for="#">
+                              <input type="text" placeholder="Місто" required>
+                            </label>
+                            <label class="form-tabs__label" for="#">
+                              <input type="tel" placeholder="+38 (   )" required>
+                            </label>
+                            <label class="form-tabs__label form-tabs__label--long" for="#">
+                              <input type="text" placeholder="Вулиця, дім, підʼїзд, квартира" required>
+                            </label>
+
+                            <textarea placeholder="Коментар, якшо потрібно" cols="30" rows="5"></textarea>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </form>
+
+
+              <aside class="order-aside order-section__aside">
+
+                <div class="order-aside__item">
+                  <span class="order-aside__title">
+                    Разом:
+                  </span>
+                  <ul class="total-list">
+                    <li class="total-list__item">
+                      <span class="total-list__name">
+                        3 товара на суму
+                      </span>
+
+                      <span class="total-list__value">
+                        594
+                        <b>
+                          ₴
+                        </b>
+                      </span>
+                    </li>
+                    <li class="total-list__item">
+                      <span class="total-list__name">
+                        Вартість доставки
+                      </span>
+
+                      <span class="total-list__value">
+                        50
+                        <b>
+                          ₴
+                        </b>
+                      </span>
+                    </li>
+                    <li class="total-list__item">
+                      <span class="total-list__name">
+                        До  сплати
+                      </span>
+
+                      <span class="total-list__value">
+                        624
+                        <b>
+                          ₴
+                        </b>
+                      </span>
+                    </li>
+                  </ul>
+                  <button class="order-aside__button">
+                    Замовлення підтверджую
+                  </button>
+                </div>
+
+                <span class="error-message">
+                  Заповніть, будь ласка, всі необхідні поля
+                </span>
+
+              </aside>
+
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <button class="lift" id="upbutton">
+    <svg width="13" height="8">
+      <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

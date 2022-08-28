@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @include('partials/head.html')
+
+<body>
+    @include('partials/header-mode.html')
+    @include('partials/modals.html')
+    <main>
+      <section class="top-section">
+        <div class="container">
+          <div class="top-section__box">
+            <ul class="navigation-list top-section__nav">
+              <li class="navigation-list__item">
+                <a href="index.html" class="navigation-list__link">
+                  Головна
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="about.html" class="navigation-list__link"> О нас </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="catalog.html" class="navigation-list__link navigation-list__link--active">
+                  Каталог
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="sale.html" class="navigation-list__link"> Акції </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="partners.html" class="navigation-list__link"> Наші партнери </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="delivery.html" class="navigation-list__link"> Доставка </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="contact.html" class="navigation-list__link"> Контакти </a>
+              </li>
+            </ul>
+
+            <ul class="breadcrumbs top-section__breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link"> Головна </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="catalog.html" class="breadcrumbs__link"> Каталог </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+        <section class="catalog-section">
+          <div class="container">
+            <div class="catalog">
+
+              <aside class="catalog-aside">
+                <h2 class="catalog-aside__title">
+                  Обрати товар:
+                </h2>
+
+                <button class="catalog-aside__back">
+                  <svg width="6" height="10" >
+                    <use href='img/sprite/sprite.svg#back'></use>
+                  </svg>
+                  Фильтры:
+                </button>
+
+                <form action="#" class="catalog-aside__search search-form">
+                  <input class="search-form__input" type="text" name="search" placeholder="Пошук">
+                  <button type="submit" class="search-form__button">
+                    <svg width="19" height="19">
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg>
+                  </button>
+
+                  <span class="search-form__clear clear">
+                    очистити
+                  </span>
+
+                </form>
+
+                <ul class="catalog-accordion accordions">
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="1">
+                      <span class="catalog-accordion__button-name">Продукція</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+
+                      <span class="catalog-accordion__button-value">Пиво</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="1">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+
+                          <ul class="checkbox-sublist panel">
+                            <li class="checkbox-sublist__item">
+                              <div class="checkbox">
+                                <label class="custom-checkbox">
+                                  <input type="checkbox" name="#" value="#">
+                                  <span>Алкогольне</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="checkbox-sublist__item">
+                              <div class="checkbox">
+                                <label class="custom-checkbox">
+                                  <input type="checkbox" name="#" value="#">
+                                  <span>Безалкогольне</span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+
+                          <ul class="checkbox-sublist panel">
+                            <li class="checkbox-sublist__item">
+                              <div class="checkbox">
+                                <label class="custom-checkbox">
+                                  <input type="checkbox" name="#" value="#">
+                                  <span>Алкогольне</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="checkbox-sublist__item">
+                              <div class="checkbox">
+                                <label class="custom-checkbox">
+                                  <input type="checkbox" name="#" value="#">
+                                  <span>Безалкогольне</span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="radio" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="2">
+
+                      <span class="catalog-accordion__button-name">країна виробник</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Укрaїна, Франція</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="2">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="3">
+
+                      <span class="catalog-accordion__button-name">вид</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="3">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="4">
+
+                      <span class="catalog-accordion__button-name"> міцність</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="4">
+                      <li class="catalog-accordion__range">
+                        <div class="range-values">
+                          <input class="range-values__lower" type="number">
+                          <input class="range-values__upper" type="number">
+                        </div>
+                        <div class="range-slider"></div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="5">
+
+                      <span class="catalog-accordion__button-name">гіркість</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="5">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="6">
+
+                      <span class="catalog-accordion__button-name">Колір:</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="6">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                  <li class="catalog-accordion__item">
+                    <button class="catalog-accordion__button" data-id="7">
+
+                      <span class="catalog-accordion__button-name">тара</span>
+                      <svg width='13' height='8'>
+                        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                      </svg>
+                      <span class="catalog-accordion__button-value">Всі</span>
+                    </button>
+
+                    <ul class="catalog-accordion__checkboxes panel" data-content="7">
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Ель</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Лагер</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="catalog-accordion__checkbox">
+                        <div class="checkbox">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" name="#" value="#">
+                            <span>Бок</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul>
+
+              </aside>
+
+
+              <div class="catalog__inner">
+                <h2 class="catalog-section__title">
+                  Каталог
+                </h2>
+
+                <div class="catalog-filters catalog-section__filters">
+                  <button class="mobile-filters">
+                    Фильтры
+                  </button>
+
+                  <div class="catalog-filters__select">
+
+                      <div class='select'>
+                        <div class='select__header'>
+                          <span class='select__current'>Все</span>
+                          <div class='select__icon'>
+                            <svg width="14" height="8">
+                              <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class='select__body'>
+                          <ul class='select__wrapp'>
+                            <li class='select__item' data-choice='choosen'>назві</li>
+                            <li class='select__item' data-choice='choosen'>ціні</li>
+                            <li class='select__item' data-choice='choosen'>Рейтингу</li>
+                            <li class='select__item' data-choice='choosen'>популярності</li>
+                            <li class='select__item' data-choice='choosen'>об’єму</li>
+                            <li class='select__item' data-choice='choosen'>країні</li>
+                            <li class='select__item' data-choice='choosen'>тарі</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                  </div>
+
+                  <span class="catalog-filters__name">
+                    Сортувати по:
+                  </span>
+
+                  <ul class="catalog-filters__list">
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        назві
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        ціні
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        Рейтингу
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        популярності
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        об’єму
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        країні
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+
+                    <li class="catalog-filters__item">
+                      <button class="catalog-filters__button">
+                        тарі
+                        <svg width="6" height="8" >
+                          <use href='img/sprite/sprite.svg#arrow-top'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <p class="catalog-filters__result">
+                    Знайдено:
+                    <span class="catalog-filters__value">
+                      9 товарів
+                    </span>
+                  </p>
+
+                </div>
+
+                <ul class="product-list product-list--catalog" >
+                  <li class="product-list__item">
+                    <div class="product-card product-card--sale">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11.3 %
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img.webp'>
+                          <img width='230' height='260' src='img/product/img.png' alt='product'>
+                        </picture>
+
+                        <span class="limited product-card__limited">
+                          Обмежена кількість
+                        </span>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun “Old Engine Oil”
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11.3 %
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img2.webp'>
+                          <img width='230' height='260' src='img/product/img2.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun “Old Engine Oil”
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11.3 %
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img.webp'>
+                          <img width='230' height='260' src='img/product/img.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun “Old Engine Oil”
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11.3 %
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img2.webp'>
+                          <img width='230' height='260' src='img/product/img2.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun “Old Engine Oil”
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11.3 %
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img.webp'>
+                          <img width='230' height='260' src='img/product/img.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun “Old Engine Oil”
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-list__item">
+                    <div class="product-card">
+                      <a href="product.html" class="product-card__image">
+                        <span class="product-card__deg">
+                          11.3 %
+                        </span>
+                        <picture>
+                          <source type='image/webp' srcset='img/product/img2.webp'>
+                          <img width='230' height='260' src='img/product/img2.png' alt='product'>
+                        </picture>
+                      </a>
+                      <span class="product-card__name">
+                        Harviestoun “Old Engine Oil”
+                      </span>
+                      <ul class="product-card__list">
+                        <li class="product-card__item">
+                          <span class="product-card__title">Країна:</span>
+                          <span class="product-card__value">США</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Вид:</span>
+                          <span class="product-card__value">Янтарний ель</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Колір:</span>
+                          <span class="product-card__value">Темне, фільтроване</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Гіркість:</span>
+                          <span class="product-card__value">Солодке</span>
+                        </li>
+                        <li class="product-card__item">
+                          <span class="product-card__title">Густина:</span>
+                          <span class="product-card__value">200</span>
+                        </li>
+                      </ul>
+                      <div class="product-card__bottom">
+                        <button class="product-card__add">
+                          у кошик
+                        </button>
+                        <div class="product-card__price">
+                          <span class="product-card__volume">
+                            500 мл
+                          </span>
+                          <span class="product-card__price-value">
+                            150 ₴
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+
+                <button class="load-more show-more">Показати ще</button>
+
+                <p class="catalog__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla potenti iaculis in mauris placerat et ipsum neque, mauris. Elementum faucibus lectus odio sit non. In malesuada nibh sed donec nunc sapien id tortor auctor. At diam sed habitasse elit eget lectus. Donec maecenas sit habitasse nulla vitae, quisque non duis sapien. Vulputate enim donec ut vitae eget adipiscing lectus. <br>
+                  Eu in eget diam pellentesque cras eget. Pulvinar integer nulla diam neque tristique ultrices aliquam. Amet, non volutpat mauris, eu. Libero magna id cras dignissim lorem. In malesuada quis donec quis viverra. Imperdiet elit ipsum tincidunt ultrices sed facilisis euismod phasellus. Velit in sed ac viverra dolor sed volutpat. Nullam mattis feugiat ante in habitasse interdum nisl. Purus sit fames nulla turpis consectetur quam tempor. Curabitur aliquet elementum ullamcorper lacus, cursus pulvinar scelerisque in vitae. Blandit nec, nibh fusce dolor ac eget morbi nunc facilisi.
+                </p>
+
+
+
+              </div>
+
+
+
+            </div>
+          </div>
+        </section>
+    </main>
+
+
+    @include('partials/footer.html')
+
+    <button class="lift" id="upbutton">
+      <svg width='13' height='8'>
+        <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+      </svg>
+    </button>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

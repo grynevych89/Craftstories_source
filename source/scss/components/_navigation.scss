@@ -1,0 +1,22 @@
+.main-nav {
+
+  &__list {
+    display: flex;
+
+    .nav-list__item:first-child {
+      flex-grow: 1;
+
+      @media screen and (max-width: 1025px) {
+        flex-grow: initial;
+      }
+    }
+
+    @media screen and (max-width: 1025px) {
+      .nav-list__item:not(:first-child) {
+        display: none;
+      }
+    }
+
+
+  }
+}

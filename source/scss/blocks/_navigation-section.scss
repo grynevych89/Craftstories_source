@@ -1,0 +1,39 @@
+.navigation-section {
+  position: relative;
+
+  &__top {
+    background-color: var(--color-b);
+    padding: clamp(20px, 2.333vw, 28px) 0;
+  }
+
+  &__bottom {
+    padding: clamp(40px, 5.833vw, 70px)
+    0 clamp(45px, 6.25vw, 75px);
+     background: var( --advantage-bg);
+  }
+
+  &__list {
+    justify-content: space-around;
+
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+
+
+  &::before {
+    content: 'надмірне споживання алкоголю шкідливе для вашого здоров’я';
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.361vw;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-c);
+    text-align: center;
+    display: block;
+    padding: 10px 0px;
+  }
+
+}

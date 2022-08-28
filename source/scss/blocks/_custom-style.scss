@@ -1,0 +1,73 @@
+.form-tabs {
+  .visicom-autocomplete {
+
+    .close {
+      transform: translateY(20%);
+    }
+
+    input {
+      height: clamp(40px, 4.25vw, 51px);
+      text-indent: 10px;
+      border: 1px solid var(--color-c);
+      border-radius: 4px;
+
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      color: var(--color-b);
+
+      &::placeholder {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: var(--color-c);
+      }
+
+    }
+
+
+
+  }
+
+  .btn.btn-primary {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    position: relative;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-i);
+
+
+    .fa.fa-map-marker {
+      width: 19px;
+      height: 24px;
+      display: block;
+      background-image: url(../img/sprite/geo.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+  }
+
+  .alert-danger {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: var(--progress-error);
+    // position: absolute;
+    // left: 0;
+    // top: -15px;
+  }
+}

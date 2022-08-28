@@ -1,0 +1,150 @@
+/* для элемента input c type="checkbox" */
+
+input[type=radio]:disabled + span:before,
+input[type=checkbox]:disabled + span:before,
+input[type=radio]:disabled + span,
+input[type=checkbox]:disabled + span {
+  opacity: .3;
+  pointer-events: none;
+}
+.custom-checkbox {
+  display:  flex;
+  align-items: center;
+  position: relative;
+}
+
+.custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--color-a);
+
+  @media screen and (max-width: 1025px) {
+    font-size: 14px;
+  }
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox > input[type='checkbox'] + span::before {
+  content: '';
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid var(--plus-bg);
+  border-radius: 4px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 17px 17px;
+
+
+  @media screen and (max-width: 1025px) {
+
+    &:not(.choice-button) {
+
+      width: 15px;
+      height: 15px;
+      margin-right: 7px;
+      background-size: 70%;
+    }
+
+  }
+}
+
+.custom-checkbox > input[type='radio'] + span::before {
+  content: '';
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid var(--plus-bg);
+  border-radius: 50%;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 17px 17px;
+
+  @media screen and (max-width: 1025px) {
+
+    &:not(.choice-button)  {
+      width: 15px;
+      height: 15px;
+      background-size: 70%;
+      margin-right: 7px;
+    }
+
+  }
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='15' height='15' rx='7.5' fill='%23A5340F' stroke='%23A5340F' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox>input:disabled+span::before {
+  opacity: .5;
+}
+
+.choice-button {
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+
+  &__label {
+    position: relative;
+    padding: 0 10px;
+    width: 100%;
+    z-index: 0;
+    height: 30px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+
+    input[type=radio] + span::before {
+      width: initial;
+      left: 0;
+      right: 0;
+      position: absolute;
+      border-radius: 0;
+      margin: 0;
+      z-index: -1;
+
+    }
+
+    input[type=radio]:checked + span::before {
+      background-color: var(--plus-bg);
+    }
+
+    span {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color:  var(--color-a);
+      justify-content: center;
+
+      &::before {
+        height: 100%;
+      }
+    }
+  }
+}
